@@ -1,4 +1,4 @@
-#N canvas 808 7 624 674 12;
+#N canvas 791 7 649 674 12;
 #X floatatom 7 234 6 0 0 1 - - - 24;
 #X obj 15 517 phasor~;
 #X obj 15 543 *~ 0.4;
@@ -18,7 +18,7 @@
 #X floatatom 80 493 5 0 0 0 - - - 0;
 #X obj 98 399 r span;
 #X obj 98 422 * 1.1;
-#X obj 112 196 hsl 500 30 0 100 0 0 empty empty span -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
+#X obj 112 196 hsl 500 30 0.05 100 0 0 empty empty span -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
 #X obj 108 272 s span;
 #X obj 15 207 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X floatatom 109 235 3 0 0 0 - - - 24;
@@ -100,7 +100,7 @@
 #X msg 93 13 \; pd dsp 1;
 #X obj 81 598 loadbang;
 #X msg 183 12 listen 10121;
-#X obj 81 623 0.1;
+#X msg 81 623 0.3;
 #X connect 0 0 8 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
